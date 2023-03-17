@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="css/chessboard-1.0.0.min.css">
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="js/chessboard-1.0.0.min.js"></script>
+</head>
+<body>
+
+<div id="boards" style="width: 400px"></div>
+
+<script type="text/javascript">
+  // Wrap the generated JavaScript code in a function
+  function createBoards() {
+  
+var board0 = Chessboard('board0', { position: '5R2/8/4P1pp/QBK3k1/3P2pr/7p/8/8 w - - 0 1' });
+var board1 = Chessboard('board1', { position: '7B/8/4Q3/Rbk1p3/8/Pp1p4/1KPP4/8 w - - 0 1' });
+var board2 = Chessboard('board2', { position: '8/8/8/7p/4p2P/2KNk1p1/3p1pQ1/3B3n w - - 0 1' });
+var board3 = Chessboard('board3', { position: '8/5N2/5R2/1p1N1P2/1p1k4/1Q2p3/4p1P1/4K3 w - - 0 1' });
+var board4 = Chessboard('board4', { position: '8/8/2K1p2N/2P1k1Pp/2Qp1n1R/8/4P3/8 w - - 0 1' });
+var board5 = Chessboard('board5', { position: '8/3pp3/4PP2/4k3/1P6/3R1Q2/1Kp1N3/2B5 w - - 0 1' });
+var board6 = Chessboard('board6', { position: '1nQ5/N7/PPP5/3p4/2kp4/2pN4/2K5/8 w - - 0 1' });
+var board7 = Chessboard('board7', { position: '5Q2/2p5/2R4n/3pp3/4k2P/4p3/4P3/3K1R2 w - - 0 1' });
+
+
+  }
+
+  // Number of Chessboard objects
+  var num_boards = 8;
+
+  // Loop through each Chessboard object
+  for (var i = 0; i < num_boards; i++) {
+    // Generate a unique ID for this Chessboard object
+    var board_id = 'board' + i;
+
+    // Create a new DOM node with this ID
+    var board_node = $('<div>').attr('id', board_id);
+
+    // Append this node to the #boards container
+    $('#boards').append(board_node);
+
+    // Add a line break after this board
+    $('#boards').append('<br>');
+  }
+
+  // Call the createBoards function to create the Chessboard objects
+  createBoards();
+</script>
+
+</body>
+</html>
+  

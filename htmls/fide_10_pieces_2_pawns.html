@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="css/chessboard-1.0.0.min.css">
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="js/chessboard-1.0.0.min.js"></script>
+</head>
+<body>
+
+<div id="boards" style="width: 400px"></div>
+
+<script type="text/javascript">
+  // Wrap the generated JavaScript code in a function
+  function createBoards() {
+  
+var board0 = Chessboard('board0', { position: '8/3p4/3R4/8/5knQ/3B3b/3N2p1/6K1 w - - 0 1' });
+var board1 = Chessboard('board1', { position: '8/4pNRb/2Q5/5k2/7b/3K4/2p5/2B5 w - - 0 1' });
+var board2 = Chessboard('board2', { position: '6B1/8/8/4K3/8/pNQ5/kpn1N3/B7 w - - 0 1' });
+var board3 = Chessboard('board3', { position: '1Q5b/1B6/1R6/8/2pk4/3p4/5R1B/K7 w - - 0 1' });
+var board4 = Chessboard('board4', { position: 'B7/1r6/3p1B2/7Q/1q3k2/8/5P1K/3R4 w - - 0 1' });
+var board5 = Chessboard('board5', { position: '7n/6r1/3n1pNp/3K3k/3B4/8/6Q1/8 w - - 0 1' });
+var board6 = Chessboard('board6', { position: '8/8/8/6QB/6NK/3NB3/5pkp/6b1 w - - 0 1' });
+
+
+  }
+
+  // Number of Chessboard objects
+  var num_boards = 7;
+
+  // Loop through each Chessboard object
+  for (var i = 0; i < num_boards; i++) {
+    // Generate a unique ID for this Chessboard object
+    var board_id = 'board' + i;
+
+    // Create a new DOM node with this ID
+    var board_node = $('<div>').attr('id', board_id);
+
+    // Append this node to the #boards container
+    $('#boards').append(board_node);
+
+    // Add a line break after this board
+    $('#boards').append('<br>');
+  }
+
+  // Call the createBoards function to create the Chessboard objects
+  createBoards();
+</script>
+
+</body>
+</html>
+  
