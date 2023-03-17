@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="css/chessboard-1.0.0.min.css">
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="js/chessboard-1.0.0.min.js"></script>
+</head>
+<body>
+
+<div id="boards" style="width: 400px"></div>
+
+<script type="text/javascript">
+  // Wrap the generated JavaScript code in a function
+  function createBoards() {
+  
+var board0 = Chessboard('board0', { position: '7B/2NQ4/7r/rR4Np/R1bbBk1K/6np/q1n2P2/8 w - - 0 1' });
+var board1 = Chessboard('board1', { position: '1brR4/4B1p1/5nP1/N2Nk3/1R3p1K/1Qn4B/8/2qr3b w - - 0 1' });
+var board2 = Chessboard('board2', { position: '2rN2BK/4q1p1/4n2b/R7/2pkN3/3n4/1P2Q2B/1b2Rr2 w - - 0 1' });
+var board3 = Chessboard('board3', { position: 'b6B/4N2B/8/1R3P2/3Pk1K1/1n1rb1R1/Q1n3p1/qr1N4 w - - 0 1' });
+var board4 = Chessboard('board4', { position: 'n3Q3/rp4pb/q3p2B/r3k3/2RRNN2/6bB/8/2nK4 w - - 0 1' });
+var board5 = Chessboard('board5', { position: 'N2k1b2/N2p4/3P2B1/K3R1rr/1P5B/3n1b2/n3RQ2/6q1 w - - 0 1' });
+var board6 = Chessboard('board6', { position: 'b1rR2B1/2nq1N2/8/1p2p3/1B1k1b2/1Q2nr2/2pN4/2K1R3 w - - 0 1' });
+var board7 = Chessboard('board7', { position: 'QB1n2r1/7q/2r2R2/4nbp1/3bBkN1/2p4p/4KN2/6R1 w - - 0 1' });
+var board8 = Chessboard('board8', { position: '4r3/2r5/Bp2R2b/1n6/2n2Q2/3kNbRq/2p1p1N1/2K1B3 w - - 0 1' });
+var board9 = Chessboard('board9', { position: '1Q2b3/4bkBK/5p2/2NR3p/3pn1n1/5N1q/B6r/4rR2 w - - 0 1' });
+var board10 = Chessboard('board10', { position: '1n3K2/1BQb4/1PR2N1p/2B3br/2k1N3/1R6/Pn6/q2r4 w - - 0 1' });
+var board11 = Chessboard('board11', { position: 'B1rnN2B/bq6/2RrP3/2bk1N2/Q5P1/1R3P2/5n2/1K6 w - - 0 1' });
+var board12 = Chessboard('board12', { position: '5N2/1bN1P3/8/RB2nkBK/4p3/5P2/2Qr1n2/1q1rbR2 w - - 0 1' });
+
+
+  }
+
+  // Number of Chessboard objects
+  var num_boards = 13;
+
+  // Loop through each Chessboard object
+  for (var i = 0; i < num_boards; i++) {
+    // Generate a unique ID for this Chessboard object
+    var board_id = 'board' + i;
+
+    // Create a new DOM node with this ID
+    var board_node = $('<div>').attr('id', board_id);
+
+    // Append this node to the #boards container
+    $('#boards').append(board_node);
+
+    // Add a line break after this board
+    $('#boards').append('<br>');
+  }
+
+  // Call the createBoards function to create the Chessboard objects
+  createBoards();
+</script>
+
+</body>
+</html>
+  
