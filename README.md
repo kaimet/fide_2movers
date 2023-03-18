@@ -1,6 +1,7 @@
 # fide_2movers
 
-Chess problems from FIDE Albums sorted by pieces and pawns.
+Chess problems from FIDE Albums sorted by pieces and pawns.  
+https://kaimet.github.io/fide_2movers/index.html
 
 Extracted from Mate en Dos.pgn - Eduardo Sadier's database (05-12-2021 update) from here: https://sites.google.com/site/edusadier/home
 
