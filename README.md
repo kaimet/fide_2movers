@@ -4,7 +4,7 @@ Chess problems from FIDE Albums sorted by pieces and pawns.
 
 Extracted from Mate en Dos.pgn - Eduardo Sadier's database (05-12-2021 update) from here: https://sites.google.com/site/edusadier/home
 
-Problems count by year:
+Problems count by year:  
 FIDE Album 1914-1918 : 17 problems  
 FIDE Album 1914-1928 : 228 problems  
 FIDE Album 1929-1944 : 448 problems  
